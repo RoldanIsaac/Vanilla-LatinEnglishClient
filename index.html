@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LatinEnglish - Plataforma educativa para aprender inglés de forma efectiva. Conecta con el inglés americano y británico."
+    />
+    <title>LatinEnglish | Aprende Inglés de Forma Efectiva</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌎</text></svg>"
+    />
+  </head>
+  <body data-theme="light">
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="#" class="nav-logo">
+          <span class="logo-icon">🌎</span>
+          <span class="logo-text"
+            >Latin<span class="logo-accent">English</span></span
+          >
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#features">Características</a></li>
+          <li><a href="#method">Método</a></li>
+          <li><a href="#testimonials">Testimonios</a></li>
+          <li><a href="#pricing">Planes</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Cambiar tema"
+          >
+            <span class="theme-icon sun">☀️</span>
+            <span class="theme-icon moon">🌙</span>
+          </button>
+          <a href="#pricing" class="btn btn-primary btn-sm">Comenzar Gratis</a>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <header class="hero" id="hero">
+      <div class="hero-carousel" id="heroCarousel">
+        <div
+          class="carousel-slide active"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1485738422979-f5c462d49f04?w=1600&q=80&quot;);
+          "
+        >
+          <div class="slide-overlay"></div>
+        </div>
+        <div
+          class="carousel-slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?w=1600&q=80&quot;);
+          "
+        >
+          <div class="slide-overlay"></div>
+        </div>
+        <div
+          class="carousel-slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1501466044931-62695aada8e9?w=1600&q=80&quot;);
+          "
+        >
+          <div class="slide-overlay"></div>
+        </div>
+        <div
+          class="carousel-slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1600&q=80&quot;);
+          "
+        >
+          <div class="slide-overlay"></div>
+        </div>
+        <div
+          class="carousel-slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1534430480872-3498386e7856?w=1600&q=80&quot;);
+          "
+        >
+          <div class="slide-overlay"></div>
+        </div>
+        <div
+          class="carousel-slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=1600&q=80&quot;);
+          "
+        >
+          <div class="slide-overlay"></div>
+        </div>
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-badge">
+          🇺🇸 American English &bull; 🇬🇧 British English
+        </div>
+        <h1 class="hero-title">
+          Domina el inglés<br />
+          <span class="highlight">sin fronteras</span>
+        </h1>
+        <p class="hero-subtitle">
+          La plataforma educativa diseñada para hispanohablantes. Aprende inglés
+          americano y británico con métodos probados, clases interactivas y una
+          comunidad que te impulsa.
+        </p>
+        <div class="hero-cta">
+          <a href="#pricing" class="btn btn-primary btn-lg"
+            >Empieza Gratis Hoy</a
+          >
+          <a href="#method" class="btn btn-outline btn-lg">Conoce el Método</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">50K+</span>
+            <span class="stat-label">Estudiantes</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">96%</span>
+            <span class="stat-label">Satisfacción</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">2 Acentos</span>
+            <span class="stat-label">US &amp; UK</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <button
+          class="carousel-btn prev"
+          id="carouselPrev"
+          aria-label="Anterior"
+        >
+          &#10094;
+        </button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button
+          class="carousel-btn next"
+          id="carouselNext"
+          aria-label="Siguiente"
+        >
+          &#10095;
+        </button>
+      </div>
+    </header>
+
+    <!-- ========== FEATURES ========== -->
+    <section class="section features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">¿Por qué LatinEnglish?</span>
+          <h2 class="section-title">
+            Todo lo que necesitas para aprender inglés
+          </h2>
+          <p class="section-desc">
+            Nuestra plataforma combina tecnología, pedagogía y cultura para
+            ofrecerte la mejor experiencia de aprendizaje.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card" data-aos>
+            <div class="feature-icon">🎯</div>
+            <h3>Aprendizaje Personalizado</h3>
+            <p>
+              Nuestro algoritmo adapta las lecciones a tu nivel, ritmo y
+              objetivos específicos de aprendizaje.
+            </p>
+          </div>
+          <div class="feature-card" data-aos>
+            <div class="feature-icon">🗣️</div>
+            <h3>Pronunciación con IA</h3>
+            <p>
+              Practica tu pronunciación con retroalimentación en tiempo real.
+              Compara tu acento americano y británico.
+            </p>
+          </div>
+          <div class="feature-card" data-aos>
+            <div class="feature-icon">📚</div>
+            <h3>Contenido Cultural</h3>
+            <p>
+              Aprende sobre las culturas de EE.UU. y el Reino Unido mientras
+              perfeccionas tu gramática y vocabulario.
+            </p>
+          </div>
+          <div class="feature-card" data-aos>
+            <div class="feature-icon">👥</div>
+            <h3>Comunidad Activa</h3>
+            <p>
+              Conecta con otros estudiantes hispanohablantes. Practica en grupos
+              y forma lazos de estudio.
+            </p>
+          </div>
+          <div class="feature-card" data-aos>
+            <div class="feature-icon">🏆</div>
+            <h3>Certificaciones</h3>
+            <p>
+              Obtén certificados al completar cada nivel. Preparación para
+              TOEFL, IELTS y Cambridge.
+            </p>
+          </div>
+          <div class="feature-card" data-aos>
+            <div class="feature-icon">📱</div>
+            <h3>Aprende Donde Sea</h3>
+            <p>
+              Accede desde cualquier dispositivo. Lecciones offline disponibles
+              para que nunca pares de aprender.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== METHOD ========== -->
+    <section class="section method" id="method">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Nuestro Método</span>
+          <h2 class="section-title">Aprende en 4 pasos simples</h2>
+          <p class="section-desc">
+            Un método diseñado científicamente para hispanohablantes que quieren
+            dominar el inglés.
+          </p>
+        </div>
+        <div class="method-steps">
+          <div class="method-step" data-aos>
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>Evaluación Inicial</h3>
+              <p>
+                Realizamos un diagnóstico completo de tu nivel actual,
+                identificando fortalezas y áreas de mejora para crear tu plan
+                personalizado.
+              </p>
+            </div>
+          </div>
+          <div class="method-step" data-aos>
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3>Inmersión Cultural</h3>
+              <p>
+                Sumérgete en contenido auténtico de Estados Unidos y Gran
+                Bretaña. Aprende el idioma como realmente se habla en cada país.
+              </p>
+            </div>
+          </div>
+          <div class="method-step" data-aos>
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>Práctica Interactiva</h3>
+              <p>
+                Ejercicios de conversación, escritura y comprensión con
+                retroalimentación instantánea. Practica con nativos y
+                compañeros.
+              </p>
+            </div>
+          </div>
+          <div class="method-step" data-aos>
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3>Certificación y Progreso</h3>
+              <p>
+                Mide tu avance con evaluaciones periódicas. Obtén certificados
+                reconocidos y prepárate para exámenes oficiales.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ACCENTS SECTION ========== -->
+    <section class="section accents">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Dos Mundos, Un Idioma</span>
+          <h2 class="section-title">Inglés Americano &amp; Británico</h2>
+          <p class="section-desc">
+            Domina ambas variantes del inglés y amplía tus oportunidades
+            globales.
+          </p>
+        </div>
+        <div class="accents-grid">
+          <div class="accent-card us" data-aos>
+            <div class="accent-flag">🇺🇸</div>
+            <h3>American English</h3>
+            <p>
+              Aprende el acento y vocabulario usado en Estados Unidos. Ideal
+              para negocios, tecnología y entretenimiento.
+            </p>
+            <ul class="accent-features">
+              <li>Pronunciación americana</li>
+              <li>Expresiones coloquiales de EE.UU.</li>
+              <li>Cultura y negocios americanos</li>
+              <li>Preparación TOEFL</li>
+            </ul>
+          </div>
+          <div class="accent-card uk" data-aos>
+            <div class="accent-flag">🇬🇧</div>
+            <h3>British English</h3>
+            <p>
+              Domina el inglés británico clásico. Perfecto para estudios
+              académicos, viajes a Europa y cultura.
+            </p>
+            <ul class="accent-features">
+              <li>Pronunciación británica (RP)</li>
+              <li>Expresiones del Reino Unido</li>
+              <li>Cultura y tradiciones británicas</li>
+              <li>Preparación IELTS &amp; Cambridge</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Testimonios</span>
+          <h2 class="section-title">Lo que dicen nuestros estudiantes</h2>
+          <p class="section-desc">
+            Miles de hispanohablantes ya transformaron su inglés con
+            LatinEnglish.
+          </p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card" data-aos>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "En 6 meses pasé de nivel básico a intermedio-alto. La metodología
+              para hispanohablantes hace toda la diferencia. ¡Ahora trabajo en
+              una empresa internacional!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MC</div>
+              <div>
+                <strong>María Castillo</strong>
+                <span>México · Estudiante desde 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-aos>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Lo mejor es que puedo aprender tanto inglés americano como
+              británico. Me preparé para el IELTS y obtuve un 7.5. El contenido
+              cultural es increíble."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">CR</div>
+              <div>
+                <strong>Carlos Rodríguez</strong>
+                <span>Colombia · Estudiante desde 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-aos>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "La herramienta de pronunciación con IA es espectacular. Por fin
+              pude corregir errores que arrastraba desde hace años. La comunidad
+              es super motivadora."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AL</div>
+              <div>
+                <strong>Ana López</strong>
+                <span>Argentina · Estudiante desde 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRICING ========== -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Planes</span>
+          <h2 class="section-title">Elige tu camino al inglés</h2>
+          <p class="section-desc">
+            Planes flexibles para cada necesidad. Comienza gratis y avanza a tu
+            ritmo.
+          </p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card" data-aos>
+            <div class="pricing-header">
+              <h3>Básico</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">0</span>
+                <span class="period">/mes</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li>✓ Acceso a lecciones básicas</li>
+              <li>✓ 1 prueba de nivel</li>
+              <li>✓ Vocabulario esencial</li>
+              <li>✓ Foro comunitario</li>
+              <li class="disabled">✗ Clases en vivo</li>
+              <li class="disabled">✗ Certificaciones</li>
+              <li class="disabled">✗ Contenido offline</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-block">Empezar Gratis</a>
+          </div>
+          <div class="pricing-card popular" data-aos>
+            <div class="popular-badge">Más Popular</div>
+            <div class="pricing-header">
+              <h3>Pro</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">14</span>
+                <span class="period">/mes</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li>✓ Todo del plan Básico</li>
+              <li>✓ Lecciones ilimitadas</li>
+              <li>✓ Pronunciación con IA</li>
+              <li>✓ Inglés US &amp; UK</li>
+              <li>✓ 4 clases en vivo/mes</li>
+              <li>✓ Certificaciones</li>
+              <li class="disabled">✗ Tutor personal</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-block">Elegir Pro</a>
+          </div>
+          <div class="pricing-card" data-aos>
+            <div class="pricing-header">
+              <h3>Premium</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">29</span>
+                <span class="period">/mes</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li>✓ Todo del plan Pro</li>
+              <li>✓ Tutor personal 1-a-1</li>
+              <li>✓ Clases en vivo ilimitadas</li>
+              <li>✓ Preparación TOEFL/IELTS</li>
+              <li>✓ Contenido offline</li>
+              <li>✓ Certificados premium</li>
+              <li>✓ Soporte prioritario</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-block">Elegir Premium</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="section cta">
+      <div class="container">
+        <div class="cta-content" data-aos>
+          <h2>¿Listo para dominar el inglés?</h2>
+          <p>
+            Únete a más de 50,000 estudiantes que ya están transformando su
+            futuro con LatinEnglish.
+          </p>
+          <a href="#pricing" class="btn btn-primary btn-lg"
+            >Comienza Tu Viaje Hoy</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Contacto</span>
+          <h2 class="section-title">¿Tienes preguntas?</h2>
+          <p class="section-desc">
+            Estamos aquí para ayudarte. Escríbenos y te responderemos pronto.
+          </p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tu@email.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="¿En qué podemos ayudarte?"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo">
+              <span class="logo-icon">🌎</span>
+              <span class="logo-text"
+                >Latin<span class="logo-accent">English</span></span
+              >
+            </a>
+            <p>
+              La plataforma educativa #1 para hispanohablantes que quieren
+              dominar el inglés americano y británico.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="TikTok">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Plataforma</h4>
+            <ul>
+              <li><a href="#features">Características</a></li>
+              <li><a href="#method">Método</a></li>
+              <li><a href="#pricing">Planes</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Recursos</h4>
+            <ul>
+              <li><a href="#">Centro de Ayuda</a></li>
+              <li><a href="#">Guía de Estudio</a></li>
+              <li><a href="#">Diccionario</a></li>
+              <li><a href="#">Podcast</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Términos de Uso</a></li>
+              <li><a href="#">Privacidad</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 LatinEnglish. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
